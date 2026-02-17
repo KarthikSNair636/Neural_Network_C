@@ -7,16 +7,16 @@ One hidden layer with 128 neurons.
 
 ## 📂 Project Structure
 
-NEURAL_NETWORK_C/
-└── mnist_nn/
-├── data/ # MNIST dataset files
-├── nn.c # Neural network implementation
-├── nn.h # Neural network header
-├── mnist_loader.c # MNIST dataset loader
-├── mnist_loader.h # Loader header
-├── train.c # Training routine
-├── test.c # Testing routine
-└── model.bin # Saved trained model weights
+    NEURAL_NETWORK_C/
+    └── mnist_nn/
+    ├── data/ # MNIST dataset files
+    ├── nn.c # Neural network implementation
+    ├── nn.h # Neural network header
+    ├── mnist_loader.c # MNIST dataset loader
+    ├── mnist_loader.h # Loader header
+    ├── train.c # Training routine
+    ├── test.c # Testing routine
+    └── model.bin # Saved trained model weights
 
 
 ---
@@ -63,17 +63,3 @@ gcc -o test test.c nn.c mnist_loader.c -lm
 
 ./train
 ./test
-
-📝 Notes
-
-Single-threaded, uses arrays.
-
-Accuracy limited due to few epochs and simple training.
-
-Improvements: more epochs, mini-batch training, better initialization, more layers.
-
-📚 References
-
-MNIST Dataset
-
-Standard feedforward and backpropagation algorithms
